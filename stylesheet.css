@@ -14,3 +14,11 @@ dl{
 #second-subheading{
     font-size: 1.5rem
 }
+
+.bio aside{ background-color: lightpink;
+    width: 25%;
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
