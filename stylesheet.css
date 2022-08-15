@@ -22,3 +22,34 @@ dl{
     margin-left: 10px;
     margin-bottom: 10px;
 }
+// Small devices (landscape phones, up to 768px)
+@media (max-width: 767px) { .bio aside{ background-color: lightpink;
+    width: 25%;
+    float: clear;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px; }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { .bio aside{ background-color: lightpink;
+    width: 25%;
+    float: :right;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px; }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { .bio aside{ background-color: lightpink;
+    width: 25%;
+    float: middle;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px; }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { .bio aside{ background-color: lightpink;
+    width: 55%;
+    float: middle;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px; }
