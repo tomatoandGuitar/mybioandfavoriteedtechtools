@@ -1,15 +1,15 @@
 <script language="JavaScript">
 $(document).ready(function){
-    function hideWarning() {
+    $function hideWarning() {
         document.getElementById('no_go').style.display = 'none';
       }
-      function showWarning () {
+      $function showWarning () {
         document.getElementById('no_go').style.display = 'block';
         document.getElementById('no_go').innerHTML = '<strong>Warning:</strong> App will not work if local storage is disabled or unsupported.';
         console.warn('App will not work if local storage is disabled or unsupported.');
       } 
       
-      function supportsLocalStorage () {
+      $function supportsLocalStorage () {
         return typeof localStorage !== 'undefined';
       }
       
@@ -85,5 +85,7 @@ $(document).ready(function){
           });
           
         }, true);
-      }}
+    }
+}
+
 </script>
