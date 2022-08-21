@@ -16,7 +16,7 @@
 	color:black
 }
 .card{
-    background-color:lightskyblue);
+    background-color:(lightskyblue);
 }
 * {
 	box-sizing: border-box;
@@ -38,7 +38,8 @@
 	font-family: 'Montserrat', sans-serif;
 	color: #4a4a4a;
 	font-size: 17px;
-	.container {
+  }
+.container {
 	  max-width: 1120px;
 	  margin: auto;
 	  padding: 0 10px;
@@ -65,11 +66,11 @@
 	  background-color: #EEE;
 	  padding: 10px 10px 10px 32px;
 	  transition: .65s ease;
-	  &:focus {
+	  &:focus 
 		border-color: orange;
 		background-color: #fff;
 	  }
-	}
+	
 	
 	.comment-btn {
 	  appearance: none;
@@ -82,7 +83,7 @@
 	  transition: 0.65s ease;
 	  &,
 	  &:focus,
-	  &:active {
+	  &:active 
 		border: 0;      
 	  }
 	  &:hover {
@@ -93,7 +94,7 @@
 		background-color: #fff;
 		border-color: orange;
 	  }
-	}
+	
 	
 	.comment-stream {
 			list-style: none;
@@ -111,6 +112,5 @@
 		  display: inline-block;
 		}
 	  }
-	}
 	
-  }
+	
