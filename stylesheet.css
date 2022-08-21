@@ -10,8 +10,11 @@
 	background-color: rgb(179, 203, 246);
 	height: 60px;
 	width: 100%;
-	
+
 	}
+.colorfullink{
+	color:black
+}
 .card{
     background-color:lightskyblue);
 }
