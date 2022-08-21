@@ -3,6 +3,7 @@
 	<head>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<link rel="stylesheet" href="stylesheet.css">
+		
 		<title>Yaxuan"s ed tech page  </title>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +12,7 @@
 		<meta name="author" content="Yaxuan Liu" />
 	</head>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script language="JavaScript" src="js1.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<body>
 		<h1>Yaxuan Liu's educational technology page</h1>
@@ -51,22 +53,24 @@
 			<div class="card-body">
 			  <h2 class="card-title">I want to know about your favorite ed tech tools</h2>
 			  <p class="card-text"></p>
+			  <div class="warning" id="no_go"></div>
 			  <div class="wait" id="no_go"></div>
-<div class="commentbox-app">
-  <div class="container">
-    <h1 class="heading">what is your favorite ed tech tool?</h1>
-    <div class="clearfix">
-      <form id="comment-form">
-        <input type="text" id="comment-input" class="comment-input" placeholder="my favorite ed tech tool is...">
-        <input type="submit" value="Post" class="comment-btn">
-      </form>
-    </div>
-    
-    <ul id="comment-stream" class="comment-stream">
-    </ul>
-    <button class="remove-all-btn" id="remove-all" type="button">Remove all</button>
-  </div>
-</div>
-			</div>
+			  <div class="wait" id="no_go"></div>
+			  <div class="commentbox-app">
+				<div class="container">
+				  <h1 class="heading">what's your favorite educational technology tool?</h1>
+				  <div class="clearfix">
+					<form id="comment-form">
+					  <input type="text" id="comment-input" class="comment-input" placeholder="Thoughts">
+					  <input type="submit" value="Post" class="comment-btn">
+					</form>
+				  </div>
+				  <ul id="comment-stream" class="comment-stream">
+			  <!-- dummy data:       <li>Hey! <span class="comment-remove">&times;</span></li>
+					<li>my favorite is <span href="" class="comment-remove">&times;</span></li> -->
+				  </ul>
+				  
+				</div>
+			  </div>
 	</body>
 </html>

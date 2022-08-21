@@ -85,34 +85,12 @@
 	  }
 	}
 	
-	.remove-all-btn {
-	  appearance: none;
-	  border: 1px solid #ccc;
-	  color: #222;
-	  background-color: #eee;
-	  padding: .3em .6em;
-	  font-size: 30%;
-	}
-	
 	.comment-stream {
-	  list-style: none;
-	  padding: 0;
-	  margin-top: 65px;
-	  
-	  .comment-remove {
-		display: none;
-				background-color: red;
-		  color: #fff;
-		font-size: 20px;
-		text-decoration: none;
-		margin-left: 12px;
-		padding: 0 12px;
-		opacity: .75;
-		cursor: pointer;
-		&:hover {
-		  opacity: 1;
-		}
-	  }
+			list-style: none;
+			padding: 0;
+			margin-top: 65px;
+	     }
+	 
 	  
 	  li {
 		font-size: 28px;
