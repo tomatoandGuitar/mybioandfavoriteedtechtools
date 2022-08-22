@@ -10,10 +10,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="the thrid test run of Yaxuan's ECI 519 assignment 2." />
 		<meta name="author" content="Yaxuan Liu" />
-		
-	</head>
+		 <style>a:link {
+            color: #0f210f;
+            text-decoration: none;
+        }
+        a:visited {
+            color:darkslateblue;
+        }
+        a:hover {
+             
+           color: white;
+           text-decoration: underline;
+           font-size: larger;
+           font-style: italic;
+           background-color:#2b1b3b;
+       }
+        a:active  {color: rgb(40, 11, 17);}
+            </style>
+    </head>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script language="JavaScript" src="js1.js"></script>
+	
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<body>
 		<h1>Yaxuan Liu's educational technology page </h1>
@@ -58,10 +74,11 @@
 			  <div class="wait" id="no_go"></div>
 			  <div class="commentbox-app">
 				<div class="container">
+					<label for:id="comment-form" your comment> </label>
 				  <h1 class="heading">what's your favorite educational technology tool?</h1>
 				  <div class="clearfix">
 					<form id="comment-form">
-					  <input type="text" id="comment-input" class="comment-input" placeholder="Thoughts">
+					  <input type="text" id="comment-input" class="comment-input" placeholder="we may run into storage problem. please try later">
 					  <input type="submit" value="Post" class="comment-btn">
 					</form>
 				  </div>
@@ -71,5 +88,6 @@
 				  </ul>
 				</div>
 			  </div>
+			  <script language="JavaScript" src="js1.js"></script>
 	</body>
 </html>

@@ -1,23 +1,23 @@
-<script language="JavaScript">
-$(document).ready(function){
-    $function hideWarning() {
+
+$(document).ready(function(){
+    function hideWarning() {
         document.getElementById('no_go').style.display = 'none';
       }
-      $function showWarning () {
+    },function showWarning () {
         document.getElementById('no_go').style.display = 'block';
         document.getElementById('no_go').innerHTML = '<strong>Warning:</strong> App will not work if local storage is disabled or unsupported.';
         console.warn('App will not work if local storage is disabled or unsupported.');
       } 
       
-      $function supportsLocalStorage () {
+      ,function supportsLocalStorage () {
         return typeof localStorage !== 'undefined';
       }
       
-      $function getComments() {
+      ,function getComments() {
         return JSON.parse(localStorage.getItem('comments')) || [];
       }
       
-      $function saveComment (comments, commentStr, action) {
+      ,function saveComment (comments, commentStr, action) {
         if (!commentStr && comments.indexOf(commentStr) < 0) {
           action(err);
         }
@@ -26,14 +26,14 @@ $(document).ready(function){
         
       }
       
-      $function appendToStream(stream, str, index) {
+      ,function appendToStream(stream, str, index) {
         var li = document.createElement('LI');
         li.setAttribute('data-index', index);
         li.innerHTML = str;
         stream.appendChild(li);
       }
       
-      $function loadComments(stream) {
+      ,function loadComments(stream) {
         var comments = getComments();
         if (comments) {
           for (var i = 0; i < comments.length; i++) {
@@ -42,18 +42,18 @@ $(document).ready(function){
         }
       }
       
-      $function clearComments(stream) {
+      ,function clearComments(stream) {
         localStorage.removeItem('comments');
         stream.innerHTML = '';
       }
       
-      if (supportsLocalStorage()) {
+      if, (supportsLocalStorage()) {
         initApp();
       } else {
         showWarning();
       }
       
-      $function initApp() {
+      function initApp() {
         hideWarning();
         
         var commentForm = document.getElementById('comment-form'),
@@ -86,6 +86,3 @@ $(document).ready(function){
           
         }, true);
     }
-}
-
-</script>
